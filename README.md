@@ -3,7 +3,7 @@
 
 يحتوي ملف* ayat.tsv على آية في كل سطر ورقم السورة ورقم الجزء ورقم الربع والصفحة
 
-تم أخذ الايات من Dataset SematicQuran واضافة آخر ثلاث آيات لانها غير موجود في الملف الأصلي
+تم أخذ الايات من Dataset SematicQuran واضافة آخر ثلاث آيات لانها غير موجودة في الملف الأصلي
 # Links of references
 http://semanticquran.aksw.org/sparql
 
