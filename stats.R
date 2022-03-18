@@ -1,0 +1,6 @@
+ayat=read.csv("SemQuran\\repo\\Ayat.tsv",sep='\t')
+head(ayat)
+table(ayat$PartNo)
+dim(ayat)
+table(ayat$sw_id)
+head(sort(table(ayat$Rob3),decreasing=TRUE))
