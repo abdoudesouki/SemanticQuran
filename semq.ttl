@@ -1,0 +1,1146 @@
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix qvoc: <http://www.nlp2rdf.org/quranvocab#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix semq: <http://mlode.nlp2rdf.org/semanticquran/quran> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+semq:1 a qvoc:Chapter ;
+    rdfs:label "الفاتحة"^^xsd:string ;
+    qvoc:chapterIndex "1"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "1"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "1"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "1"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "1"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "7"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الفاتحة"^^xsd:string .
+
+semq:10 a qvoc:Chapter ;
+    rdfs:label "يونس"^^xsd:string ;
+    qvoc:chapterIndex "10"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "208"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "11"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "83"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "21"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "109"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "يونس"^^xsd:string .
+
+semq:100 a qvoc:Chapter ;
+    rdfs:label "العاديات"^^xsd:string ;
+    qvoc:chapterIndex "100"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "599"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "239"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "11"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "العاديات"^^xsd:string .
+
+semq:101 a qvoc:Chapter ;
+    rdfs:label "القارعة"^^xsd:string ;
+    qvoc:chapterIndex "101"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "600"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "11"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "القارعة"^^xsd:string .
+
+semq:102 a qvoc:Chapter ;
+    rdfs:label "التكاثر"^^xsd:string ;
+    qvoc:chapterIndex "102"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "600"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "8"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "التكاثر"^^xsd:string .
+
+semq:103 a qvoc:Chapter ;
+    rdfs:label "العصر"^^xsd:string ;
+    qvoc:chapterIndex "103"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "601"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "3"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "العصر"^^xsd:string .
+
+semq:104 a qvoc:Chapter ;
+    rdfs:label "الهمزة"^^xsd:string ;
+    qvoc:chapterIndex "104"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "601"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "9"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الهمزة"^^xsd:string .
+
+semq:105 a qvoc:Chapter ;
+    rdfs:label "الفيل"^^xsd:string ;
+    qvoc:chapterIndex "105"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "601"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "5"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الفيل"^^xsd:string .
+
+semq:106 a qvoc:Chapter ;
+    rdfs:label "قريش"^^xsd:string ;
+    qvoc:chapterIndex "106"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "602"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "4"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "قريش"^^xsd:string .
+
+semq:107 a qvoc:Chapter ;
+    rdfs:label "الماعون"^^xsd:string ;
+    qvoc:chapterIndex "107"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "602"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "7"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الماعون"^^xsd:string .
+
+semq:108 a qvoc:Chapter ;
+    rdfs:label "الكوثر"^^xsd:string ;
+    qvoc:chapterIndex "108"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "602"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "3"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الكوثر"^^xsd:string .
+
+semq:109 a qvoc:Chapter ;
+    rdfs:label "الكافرون"^^xsd:string ;
+    qvoc:chapterIndex "109"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "603"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "6"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الكافرون"^^xsd:string .
+
+semq:11 a qvoc:Chapter ;
+    rdfs:label "هود"^^xsd:string ;
+    qvoc:chapterIndex "11"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "221"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "11"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "88"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "22"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "123"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "هود"^^xsd:string .
+
+semq:110 a qvoc:Chapter ;
+    rdfs:label "النصر"^^xsd:string ;
+    qvoc:chapterIndex "110"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "603"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "3"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النصر"^^xsd:string .
+
+semq:111 a qvoc:Chapter ;
+    rdfs:label "المسد"^^xsd:string ;
+    qvoc:chapterIndex "111"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "603"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "5"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المسد"^^xsd:string .
+
+semq:112 a qvoc:Chapter ;
+    rdfs:label "الإخلاص"^^xsd:string ;
+    qvoc:chapterIndex "112"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "604"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "4"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الإخلاص"^^xsd:string .
+
+semq:113 a qvoc:Chapter ;
+    rdfs:label "الفلق"^^xsd:string ;
+    qvoc:chapterIndex "113"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "604"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "5"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الفلق"^^xsd:string .
+
+semq:114 a qvoc:Chapter ;
+    rdfs:label "الناس"^^xsd:string ;
+    qvoc:chapterIndex "114"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "604"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "240"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "6"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الناس"^^xsd:string .
+
+semq:12 a qvoc:Chapter ;
+    rdfs:label "يوسف"^^xsd:string ;
+    qvoc:chapterIndex "12"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "235"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "12"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "94"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "24"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "111"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "يوسف"^^xsd:string .
+
+semq:13 a qvoc:Chapter ;
+    rdfs:label "الرعد"^^xsd:string ;
+    qvoc:chapterIndex "13"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "249"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "13"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "99"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "25"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "43"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الرعد"^^xsd:string .
+
+semq:14 a qvoc:Chapter ;
+    rdfs:label "ابراهيم"^^xsd:string ;
+    qvoc:chapterIndex "14"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "255"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "13"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "102"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "26"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "52"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "ابراهيم"^^xsd:string .
+
+semq:15 a qvoc:Chapter ;
+    rdfs:label "الحجر"^^xsd:string ;
+    qvoc:chapterIndex "15"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "262"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "14"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "105"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "27"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "99"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الحجر"^^xsd:string .
+
+semq:16 a qvoc:Chapter ;
+    rdfs:label "النحل"^^xsd:string ;
+    qvoc:chapterIndex "16"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "267"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "14"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "107"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "27"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "128"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النحل"^^xsd:string .
+
+semq:17 a qvoc:Chapter ;
+    rdfs:label "الإسراء"^^xsd:string ;
+    qvoc:chapterIndex "17"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "282"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "15"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "113"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "29"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "111"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الإسراء"^^xsd:string .
+
+semq:18 a qvoc:Chapter ;
+    rdfs:label "الكهف"^^xsd:string ;
+    qvoc:chapterIndex "18"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "293"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "15"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "117"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "30"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "110"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الكهف"^^xsd:string .
+
+semq:19 a qvoc:Chapter ;
+    rdfs:label "مريم"^^xsd:string ;
+    qvoc:chapterIndex "19"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "305"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "16"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "122"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "31"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "98"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "مريم"^^xsd:string .
+
+semq:2 a qvoc:Chapter ;
+    rdfs:label "البقرة"^^xsd:string ;
+    qvoc:chapterIndex "2"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "2"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "1"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "1"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "1"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "286"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "البقرة"^^xsd:string .
+
+semq:20 a qvoc:Chapter ;
+    rdfs:label "طه"^^xsd:string ;
+    qvoc:chapterIndex "20"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "312"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "16"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "125"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "32"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "135"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "طه"^^xsd:string .
+
+semq:21 a qvoc:Chapter ;
+    rdfs:label "الأنبياء"^^xsd:string ;
+    qvoc:chapterIndex "21"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "322"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "17"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "129"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "33"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "112"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الأنبياء"^^xsd:string .
+
+semq:22 a qvoc:Chapter ;
+    rdfs:label "الحج"^^xsd:string ;
+    qvoc:chapterIndex "22"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "332"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "17"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "133"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "34"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "78"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الحج"^^xsd:string .
+
+semq:23 a qvoc:Chapter ;
+    rdfs:label "المؤمنون"^^xsd:string ;
+    qvoc:chapterIndex "23"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "342"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "18"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "137"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "35"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "118"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المؤمنون"^^xsd:string .
+
+semq:24 a qvoc:Chapter ;
+    rdfs:label "النور"^^xsd:string ;
+    qvoc:chapterIndex "24"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "350"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "18"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "140"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "35"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "64"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النور"^^xsd:string .
+
+semq:25 a qvoc:Chapter ;
+    rdfs:label "الفرقان"^^xsd:string ;
+    qvoc:chapterIndex "25"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "359"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "18"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "144"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "36"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "77"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الفرقان"^^xsd:string .
+
+semq:26 a qvoc:Chapter ;
+    rdfs:label "الشعراء"^^xsd:string ;
+    qvoc:chapterIndex "26"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "367"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "19"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "147"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "37"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "227"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الشعراء"^^xsd:string .
+
+semq:27 a qvoc:Chapter ;
+    rdfs:label "النمل"^^xsd:string ;
+    qvoc:chapterIndex "27"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "377"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "19"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "151"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "38"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "93"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النمل"^^xsd:string .
+
+semq:28 a qvoc:Chapter ;
+    rdfs:label "القصص"^^xsd:string ;
+    qvoc:chapterIndex "28"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "385"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "20"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "154"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "39"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "88"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "القصص"^^xsd:string .
+
+semq:29 a qvoc:Chapter ;
+    rdfs:label "العنكبوت"^^xsd:string ;
+    qvoc:chapterIndex "29"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "396"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "20"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "159"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "40"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "69"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "العنكبوت"^^xsd:string .
+
+semq:3 a qvoc:Chapter ;
+    rdfs:label "آل عمران"^^xsd:string ;
+    qvoc:chapterIndex "3"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "50"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "3"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "20"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "5"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "200"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "آل عمران"^^xsd:string .
+
+semq:30 a qvoc:Chapter ;
+    rdfs:label "الروم"^^xsd:string ;
+    qvoc:chapterIndex "30"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "404"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "21"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "162"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "41"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "60"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الروم"^^xsd:string .
+
+semq:31 a qvoc:Chapter ;
+    rdfs:label "لقمان"^^xsd:string ;
+    qvoc:chapterIndex "31"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "411"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "21"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "164"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "41"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "34"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "لقمان"^^xsd:string .
+
+semq:32 a qvoc:Chapter ;
+    rdfs:label "السجدة"^^xsd:string ;
+    qvoc:chapterIndex "32"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "415"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "21"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "165"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "42"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "30"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "السجدة"^^xsd:string .
+
+semq:33 a qvoc:Chapter ;
+    rdfs:label "الأحزاب"^^xsd:string ;
+    qvoc:chapterIndex "33"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "418"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "21"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "167"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "42"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "73"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الأحزاب"^^xsd:string .
+
+semq:34 a qvoc:Chapter ;
+    rdfs:label "سبإ"^^xsd:string ;
+    qvoc:chapterIndex "34"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "428"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "22"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "171"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "43"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "54"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "سبإ"^^xsd:string .
+
+semq:35 a qvoc:Chapter ;
+    rdfs:label "فاطر"^^xsd:string ;
+    qvoc:chapterIndex "35"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "434"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "22"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "174"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "44"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "45"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "فاطر"^^xsd:string .
+
+semq:36 a qvoc:Chapter ;
+    rdfs:label "يس"^^xsd:string ;
+    qvoc:chapterIndex "36"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "440"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "22"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "176"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "44"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "83"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "يس"^^xsd:string .
+
+semq:37 a qvoc:Chapter ;
+    rdfs:label "الصافات"^^xsd:string ;
+    qvoc:chapterIndex "37"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "446"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "23"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "178"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "45"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "182"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الصافات"^^xsd:string .
+
+semq:38 a qvoc:Chapter ;
+    rdfs:label "ص"^^xsd:string ;
+    qvoc:chapterIndex "38"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "453"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "23"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "181"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "46"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "88"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "ص"^^xsd:string .
+
+semq:39 a qvoc:Chapter ;
+    rdfs:label "الزمر"^^xsd:string ;
+    qvoc:chapterIndex "39"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "458"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "23"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "183"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "46"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "75"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الزمر"^^xsd:string .
+
+semq:4 a qvoc:Chapter ;
+    rdfs:label "النساء"^^xsd:string ;
+    qvoc:chapterIndex "4"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "77"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "4"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "31"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "8"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "176"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النساء"^^xsd:string .
+
+semq:40 a qvoc:Chapter ;
+    rdfs:label "غافر"^^xsd:string ;
+    qvoc:chapterIndex "40"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "467"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "24"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "187"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "47"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "85"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "غافر"^^xsd:string .
+
+semq:41 a qvoc:Chapter ;
+    rdfs:label "فصلت"^^xsd:string ;
+    qvoc:chapterIndex "41"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "477"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "24"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "190"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "48"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "54"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "فصلت"^^xsd:string .
+
+semq:42 a qvoc:Chapter ;
+    rdfs:label "الشورى"^^xsd:string ;
+    qvoc:chapterIndex "42"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "483"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "25"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "193"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "49"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "53"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الشورى"^^xsd:string .
+
+semq:43 a qvoc:Chapter ;
+    rdfs:label "الزخرف"^^xsd:string ;
+    qvoc:chapterIndex "43"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "489"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "25"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "196"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "49"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "89"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الزخرف"^^xsd:string .
+
+semq:44 a qvoc:Chapter ;
+    rdfs:label "الدخان"^^xsd:string ;
+    qvoc:chapterIndex "44"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "496"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "25"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "198"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "50"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "59"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الدخان"^^xsd:string .
+
+semq:45 a qvoc:Chapter ;
+    rdfs:label "الجاثية"^^xsd:string ;
+    qvoc:chapterIndex "45"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "499"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "25"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "199"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "50"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "37"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الجاثية"^^xsd:string .
+
+semq:46 a qvoc:Chapter ;
+    rdfs:label "الأحقاف"^^xsd:string ;
+    qvoc:chapterIndex "46"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "502"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "26"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "201"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "51"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "35"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الأحقاف"^^xsd:string .
+
+semq:47 a qvoc:Chapter ;
+    rdfs:label "محمد"^^xsd:string ;
+    qvoc:chapterIndex "47"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "507"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "26"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "202"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "51"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "38"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "محمد"^^xsd:string .
+
+semq:48 a qvoc:Chapter ;
+    rdfs:label "الفتح"^^xsd:string ;
+    qvoc:chapterIndex "48"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "511"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "26"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "204"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "51"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "29"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الفتح"^^xsd:string .
+
+semq:49 a qvoc:Chapter ;
+    rdfs:label "الحجرات"^^xsd:string ;
+    qvoc:chapterIndex "49"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "515"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "26"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "206"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "52"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "18"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الحجرات"^^xsd:string .
+
+semq:5 a qvoc:Chapter ;
+    rdfs:label "المائدة"^^xsd:string ;
+    qvoc:chapterIndex "5"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "106"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "6"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "43"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "11"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "120"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المائدة"^^xsd:string .
+
+semq:50 a qvoc:Chapter ;
+    rdfs:label "ق"^^xsd:string ;
+    qvoc:chapterIndex "50"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "518"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "26"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "207"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "52"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "45"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "ق"^^xsd:string .
+
+semq:51 a qvoc:Chapter ;
+    rdfs:label "الذاريات"^^xsd:string ;
+    qvoc:chapterIndex "51"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "520"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "26"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "208"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "52"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "60"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الذاريات"^^xsd:string .
+
+semq:52 a qvoc:Chapter ;
+    rdfs:label "الطور"^^xsd:string ;
+    qvoc:chapterIndex "52"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "523"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "27"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "209"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "53"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "49"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الطور"^^xsd:string .
+
+semq:53 a qvoc:Chapter ;
+    rdfs:label "النجم"^^xsd:string ;
+    qvoc:chapterIndex "53"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "526"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "27"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "210"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "53"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "62"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النجم"^^xsd:string .
+
+semq:54 a qvoc:Chapter ;
+    rdfs:label "القمر"^^xsd:string ;
+    qvoc:chapterIndex "54"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "528"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "27"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "211"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "53"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "55"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "القمر"^^xsd:string .
+
+semq:55 a qvoc:Chapter ;
+    rdfs:label "الرحمن"^^xsd:string ;
+    qvoc:chapterIndex "55"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "531"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "27"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "213"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "54"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "78"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الرحمن"^^xsd:string .
+
+semq:56 a qvoc:Chapter ;
+    rdfs:label "الواقعة"^^xsd:string ;
+    qvoc:chapterIndex "56"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "534"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "27"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "214"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "54"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "96"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الواقعة"^^xsd:string .
+
+semq:57 a qvoc:Chapter ;
+    rdfs:label "الحديد"^^xsd:string ;
+    qvoc:chapterIndex "57"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "537"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "27"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "215"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "54"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "29"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الحديد"^^xsd:string .
+
+semq:58 a qvoc:Chapter ;
+    rdfs:label "المجادلة"^^xsd:string ;
+    qvoc:chapterIndex "58"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "542"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "217"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "55"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "22"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المجادلة"^^xsd:string .
+
+semq:59 a qvoc:Chapter ;
+    rdfs:label "الحشر"^^xsd:string ;
+    qvoc:chapterIndex "59"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "545"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "218"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "55"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "24"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الحشر"^^xsd:string .
+
+semq:6 a qvoc:Chapter ;
+    rdfs:label "الأنعام"^^xsd:string ;
+    qvoc:chapterIndex "6"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "128"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "7"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "51"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "13"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "165"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الأنعام"^^xsd:string .
+
+semq:60 a qvoc:Chapter ;
+    rdfs:label "الممتحنة"^^xsd:string ;
+    qvoc:chapterIndex "60"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "549"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "219"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "55"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "13"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الممتحنة"^^xsd:string .
+
+semq:61 a qvoc:Chapter ;
+    rdfs:label "الصف"^^xsd:string ;
+    qvoc:chapterIndex "61"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "551"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "220"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "55"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "14"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الصف"^^xsd:string .
+
+semq:62 a qvoc:Chapter ;
+    rdfs:label "الجمعة"^^xsd:string ;
+    qvoc:chapterIndex "62"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "553"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "221"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "56"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "11"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الجمعة"^^xsd:string .
+
+semq:63 a qvoc:Chapter ;
+    rdfs:label "المنافقون"^^xsd:string ;
+    qvoc:chapterIndex "63"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "554"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "221"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "56"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "11"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المنافقون"^^xsd:string .
+
+semq:64 a qvoc:Chapter ;
+    rdfs:label "التغابن"^^xsd:string ;
+    qvoc:chapterIndex "64"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "556"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "222"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "56"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "18"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "التغابن"^^xsd:string .
+
+semq:65 a qvoc:Chapter ;
+    rdfs:label "الطلاق"^^xsd:string ;
+    qvoc:chapterIndex "65"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "558"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "223"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "56"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "12"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الطلاق"^^xsd:string .
+
+semq:66 a qvoc:Chapter ;
+    rdfs:label "التحريم"^^xsd:string ;
+    qvoc:chapterIndex "66"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "560"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "28"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "224"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "56"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "12"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "التحريم"^^xsd:string .
+
+semq:67 a qvoc:Chapter ;
+    rdfs:label "الملك"^^xsd:string ;
+    qvoc:chapterIndex "67"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "562"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "225"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "57"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "30"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الملك"^^xsd:string .
+
+semq:68 a qvoc:Chapter ;
+    rdfs:label "القلم"^^xsd:string ;
+    qvoc:chapterIndex "68"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "564"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "226"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "57"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "52"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "القلم"^^xsd:string .
+
+semq:69 a qvoc:Chapter ;
+    rdfs:label "الحاقة"^^xsd:string ;
+    qvoc:chapterIndex "69"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "566"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "227"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "57"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "52"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الحاقة"^^xsd:string .
+
+semq:7 a qvoc:Chapter ;
+    rdfs:label "الأعراف"^^xsd:string ;
+    qvoc:chapterIndex "7"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "151"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "8"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "61"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "16"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "206"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الأعراف"^^xsd:string .
+
+semq:70 a qvoc:Chapter ;
+    rdfs:label "المعارج"^^xsd:string ;
+    qvoc:chapterIndex "70"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "568"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "227"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "57"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "44"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المعارج"^^xsd:string .
+
+semq:71 a qvoc:Chapter ;
+    rdfs:label "نوح"^^xsd:string ;
+    qvoc:chapterIndex "71"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "570"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "228"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "57"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "28"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "نوح"^^xsd:string .
+
+semq:72 a qvoc:Chapter ;
+    rdfs:label "الجن"^^xsd:string ;
+    qvoc:chapterIndex "72"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "572"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "229"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "58"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "28"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الجن"^^xsd:string .
+
+semq:73 a qvoc:Chapter ;
+    rdfs:label "المزمل"^^xsd:string ;
+    qvoc:chapterIndex "73"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "574"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "229"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "58"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "20"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المزمل"^^xsd:string .
+
+semq:74 a qvoc:Chapter ;
+    rdfs:label "المدثر"^^xsd:string ;
+    qvoc:chapterIndex "74"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "575"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "230"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "58"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "56"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المدثر"^^xsd:string .
+
+semq:75 a qvoc:Chapter ;
+    rdfs:label "القيامة"^^xsd:string ;
+    qvoc:chapterIndex "75"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "577"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "231"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "58"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "40"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "القيامة"^^xsd:string .
+
+semq:76 a qvoc:Chapter ;
+    rdfs:label "الانسان"^^xsd:string ;
+    qvoc:chapterIndex "76"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "578"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "231"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "58"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "31"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الانسان"^^xsd:string .
+
+semq:77 a qvoc:Chapter ;
+    rdfs:label "المرسلات"^^xsd:string ;
+    qvoc:chapterIndex "77"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "580"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "29"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "232"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "58"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "50"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المرسلات"^^xsd:string .
+
+semq:78 a qvoc:Chapter ;
+    rdfs:label "النبإ"^^xsd:string ;
+    qvoc:chapterIndex "78"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "582"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "233"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "40"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النبإ"^^xsd:string .
+
+semq:79 a qvoc:Chapter ;
+    rdfs:label "النازعات"^^xsd:string ;
+    qvoc:chapterIndex "79"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "583"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "233"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "46"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "النازعات"^^xsd:string .
+
+semq:8 a qvoc:Chapter ;
+    rdfs:label "الأنفال"^^xsd:string ;
+    qvoc:chapterIndex "8"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "177"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "9"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "71"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "18"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "75"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الأنفال"^^xsd:string .
+
+semq:80 a qvoc:Chapter ;
+    rdfs:label "عبس"^^xsd:string ;
+    qvoc:chapterIndex "80"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "585"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "234"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "42"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "عبس"^^xsd:string .
+
+semq:81 a qvoc:Chapter ;
+    rdfs:label "التكوير"^^xsd:string ;
+    qvoc:chapterIndex "81"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "586"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "234"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "29"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "التكوير"^^xsd:string .
+
+semq:82 a qvoc:Chapter ;
+    rdfs:label "الإنفطار"^^xsd:string ;
+    qvoc:chapterIndex "82"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "587"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "235"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "19"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الإنفطار"^^xsd:string .
+
+semq:83 a qvoc:Chapter ;
+    rdfs:label "المطففين"^^xsd:string ;
+    qvoc:chapterIndex "83"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "587"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "235"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "36"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "المطففين"^^xsd:string .
+
+semq:84 a qvoc:Chapter ;
+    rdfs:label "الإنشقاق"^^xsd:string ;
+    qvoc:chapterIndex "84"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "589"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "236"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "25"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الإنشقاق"^^xsd:string .
+
+semq:85 a qvoc:Chapter ;
+    rdfs:label "البروج"^^xsd:string ;
+    qvoc:chapterIndex "85"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "590"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "236"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "22"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "البروج"^^xsd:string .
+
+semq:86 a qvoc:Chapter ;
+    rdfs:label "الطارق"^^xsd:string ;
+    qvoc:chapterIndex "86"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "591"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "236"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "59"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "17"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الطارق"^^xsd:string .
+
+semq:87 a qvoc:Chapter ;
+    rdfs:label "الأعلى"^^xsd:string ;
+    qvoc:chapterIndex "87"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "591"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "237"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "19"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الأعلى"^^xsd:string .
+
+semq:88 a qvoc:Chapter ;
+    rdfs:label "الغاشية"^^xsd:string ;
+    qvoc:chapterIndex "88"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "592"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "237"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "26"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الغاشية"^^xsd:string .
+
+semq:89 a qvoc:Chapter ;
+    rdfs:label "الفجر"^^xsd:string ;
+    qvoc:chapterIndex "89"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "593"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "237"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "30"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الفجر"^^xsd:string .
+
+semq:9 a qvoc:Chapter ;
+    rdfs:label "التوبة"^^xsd:string ;
+    qvoc:chapterIndex "9"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "187"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "10"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "75"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "19"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "129"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "التوبة"^^xsd:string .
+
+semq:90 a qvoc:Chapter ;
+    rdfs:label "البلد"^^xsd:string ;
+    qvoc:chapterIndex "90"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "594"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "238"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "20"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "البلد"^^xsd:string .
+
+semq:91 a qvoc:Chapter ;
+    rdfs:label "الشمس"^^xsd:string ;
+    qvoc:chapterIndex "91"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "595"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "238"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "15"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الشمس"^^xsd:string .
+
+semq:92 a qvoc:Chapter ;
+    rdfs:label "الليل"^^xsd:string ;
+    qvoc:chapterIndex "92"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "595"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "238"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "21"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الليل"^^xsd:string .
+
+semq:93 a qvoc:Chapter ;
+    rdfs:label "الضحى"^^xsd:string ;
+    qvoc:chapterIndex "93"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "596"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "238"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "11"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الضحى"^^xsd:string .
+
+semq:94 a qvoc:Chapter ;
+    rdfs:label "الشرح"^^xsd:string ;
+    qvoc:chapterIndex "94"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "596"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "239"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "8"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الشرح"^^xsd:string .
+
+semq:95 a qvoc:Chapter ;
+    rdfs:label "التين"^^xsd:string ;
+    qvoc:chapterIndex "95"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "597"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "239"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "8"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "التين"^^xsd:string .
+
+semq:96 a qvoc:Chapter ;
+    rdfs:label "العلق"^^xsd:string ;
+    qvoc:chapterIndex "96"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "597"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "239"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "19"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "العلق"^^xsd:string .
+
+semq:97 a qvoc:Chapter ;
+    rdfs:label "القدر"^^xsd:string ;
+    qvoc:chapterIndex "97"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "598"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "239"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "5"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "القدر"^^xsd:string .
+
+semq:98 a qvoc:Chapter ;
+    rdfs:label "البينة"^^xsd:string ;
+    qvoc:chapterIndex "98"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "598"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "239"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "8"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "البينة"^^xsd:string .
+
+semq:99 a qvoc:Chapter ;
+    rdfs:label "الزلزلة"^^xsd:string ;
+    qvoc:chapterIndex "99"^^xsd:nonNegativeInteger ;
+    qvoc:inPage "599"^^xsd:nonNegativeInteger ;
+    qvoc:inPart "30"^^xsd:nonNegativeInteger ;
+    qvoc:inQuarter "239"^^xsd:nonNegativeInteger ;
+    qvoc:inSection "60"^^xsd:nonNegativeInteger ;
+    qvoc:verseCount "8"^^xsd:nonNegativeInteger ;
+    ns1:prefLabel "الزلزلة"^^xsd:string .
+
