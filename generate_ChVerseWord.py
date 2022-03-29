@@ -65,6 +65,33 @@ DBPedia
 Wiktionary
 New: Wikidata
 ===================================================
+skos:prefLabel         Litral-ar
+rdfs:label             literal-multilingual
+qvoc:chapterIndex      xsd:nonNegativeInteger
+qvoc:verseIndex        xsd:nonNegativeInteger
+qvoc:chapterName       Litral-ar
+qvoc:descByJalalayn    Litral-ar
+qvoc:descByMuyasser    Litral-ar
+qvoc:startOfPageNo     xsd:nonNegativeInteger
+qvoc:startOfPartNo     xsd:nonNegativeInteger
+qvoc:startOfQuarterNo  xsd:nonNegativeInteger
+qvoc:startOfStationNo  xsd:nonNegativeInteger
+dcterms:license        URI
+dcterms:provenance     Litral-en
+
+
+
+
+names startOfPageNo , inPage changed between chapter and verse in Ontology
+
+
+
+
+
+
+
+
+===================================================
 
 nif , annotation char2char entity
 lexical items
