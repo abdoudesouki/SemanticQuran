@@ -81,34 +81,51 @@ jalalayn['A']=jalalayn['A'].astype(int)
 print(str(mysr['text'][mysr['S']=='2' ][ mysr['A']==5].tolist()[0]))
 #x=mysr[['text']][  mysr['S']==1 & mysr['A']==5]
 #print(x)
-#%%  ====================== Verses ==========================
+#%%  ====================== Verses /words==========================
 csv_data = pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\ayat.tsv",sep='\t',encoding='utf8')
 print(csv_data.head())
 print(csv_data.count())
 for index, row in csv_data.iterrows():    
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), SKOS.prefLabel,Literal(row["text"], datatype=XSD.string) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), RDFS.label,Literal(row["text"], datatype=XSD.string) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), DCTERMS.isPartOf,URIRef(semq[str(row["sw_id"])])) )
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.verseIndex),Literal(row["ayaNo"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.inPage),Literal(row["PageNo"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.inPart),Literal(row["PartNo"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.inQuarter),Literal(row["Rob3"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.inSection),Literal(row["HezbNo"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.chapterName),Literal(row["chnamear"], datatype=XSD.string) ))
+     suri=URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])+"-ar"])
+     g.add((suri, SKOS.prefLabel,Literal(row["text"], datatype=XSD.string) ))
+     g.add((suri, RDFS.label,Literal(row["text"], datatype=XSD.string) ))
+     g.add((suri, DCTERMS.isPartOf,URIRef(semq[str(row["sw_id"])])) )
+     g.add((suri, URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.verseIndex),Literal(row["ayaNo"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.inPage),Literal(row["PageNo"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.inPart),Literal(row["PartNo"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.inQuarter),Literal(row["Rob3"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.inSection),Literal(row["HezbNo"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.chapterName),Literal(row["chnamear"], datatype=XSD.string) ))
      tmp=mysr['text'][mysr['S']==str(row["sw_id"]) ][ mysr['A']==row["ayaNo"]].tolist()
      if len(tmp)>0:
-         g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.descByMuyasser),Literal(tmp[0], datatype=XSD.string) ))
+         g.add((suri, URIRef(qvoc.descByMuyasser),Literal(tmp[0], datatype=XSD.string) ))
      tmp=jalalayn['text'][jalalayn['S']==str(row["sw_id"]) ][ jalalayn['A']==row["ayaNo"]].tolist()
      if len(tmp)>0:
-         g.add((URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])]), URIRef(qvoc.descByJalalayn),Literal(tmp[0], datatype=XSD.string) ))
-
-
-#qvoc:descByJalalayn    Litral-ar
-
+         g.add((suri, URIRef(qvoc.descByJalalayn),Literal(tmp[0], datatype=XSD.string) ))
 #qvoc:startOfStationNo  xsd:nonNegativeInteger
 #dcterms:license        URI
 #dcterms:provenance     Litral-en
+     aa=row['text'].split()
+     ix=1
+     for w in aa:
+        wuri=URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])+"-"+str(ix)]+"-ar")
+        g.add((wuri, SKOS.prefLabel,Literal(w, datatype=XSD.string) ))
+        g.add((wuri, RDFS.label,Literal(w, datatype=XSD.string) ))
+        g.add((wuri, DCTERMS.isPartOf,URIRef(semq[str(row["sw_id"])])) )
+        g.add((wuri, DCTERMS.isPartOf,suri) )
+        g.add((wuri, URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
+        g.add((wuri, URIRef(qvoc.verseIndex),Literal(row["ayaNo"], datatype=XSD.nonNegativeInteger) ))
+        g.add((wuri, URIRef(qvoc.wordIndex),Literal(ix, datatype=XSD.nonNegativeInteger) ))
+        ix=ix+1
+
+'''
+dcterms:language      Lexvo-URI
+dcterms:license       URI
+dcterms:provenance    Litral-en
+owl:sameAs            DBpedia-URI
+owl:sameAs            Wiktionary-URI
+'''
 
 #%%
 # Clean printing of the graph.
