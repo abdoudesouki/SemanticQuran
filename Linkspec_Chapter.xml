@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE LIMES SYSTEM "limes.dtd">
+<LIMES>
+    <PREFIX>
+		<NAMESPACE>http://www.nlp2rdf.org/quranvocab#</NAMESPACE>
+		<LABEL>qvoc</LABEL>
+	</PREFIX>
+	 <PREFIX>
+        <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+        <LABEL>owl</LABEL>
+    </PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+		<LABEL>rdfs</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.wikidata.org/prop/direct/</NAMESPACE>
+		<LABEL>wdt</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.wikidata.org/entity/</NAMESPACE>
+		<LABEL>wd</LABEL>
+	</PREFIX>
+ <SOURCE>
+		<ID>quran</ID>
+		<ENDPOINT>D:/Dropbox/Web/SemanticQuran/semq.ttl</ENDPOINT>
+		<VAR>?x</VAR>
+		<PAGESIZE>-1</PAGESIZE>
+		<RESTRICTION>?x a qvoc:Chapter</RESTRICTION>
+        <PROPERTY>rdfs:label </PROPERTY>
+		<TYPE>TURTLE</TYPE>
+	</SOURCE>
+<TARGET>
+<ID>wikidata</ID>
+<ENDPOINT>https://query.wikidata.org/sparql</ENDPOINT>
+<VAR>?y</VAR>
+<PAGESIZE>-1</PAGESIZE>
+<RESTRICTION>?y wdt:P31 wd:Q234262 </RESTRICTION>
+<RESTRICTION>FILTER langMatches( lang(?v1), "ar" )
+</RESTRICTION>
+<PROPERTY>rdfs:label</PROPERTY>
+</TARGET>
+<METRIC>jaccard(concat("سورة ",x.rdfs:label),y.rdfs:label)|0.1</METRIC>
+	<ACCEPTANCE>
+		<THRESHOLD>0.6</THRESHOLD>
+		<FILE>accepted.nt</FILE>
+		<RELATION>owl:sameAs</RELATION>
+	</ACCEPTANCE>
+
+	<REVIEW>
+		<THRESHOLD>0.2</THRESHOLD>
+		<FILE>to_review.nt</FILE>
+		<RELATION>qvoc:near</RELATION>
+	</REVIEW>
+
+	<EXECUTION>
+		<REWRITER>default</REWRITER>
+		<PLANNER>default</PLANNER>
+		<ENGINE>owl:sameAs</ENGINE>
+	</EXECUTION>
+
+	<OUTPUT>NT</OUTPUT>
+	</LIMES>

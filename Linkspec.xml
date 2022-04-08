@@ -1,0 +1,24 @@
+<SOURCE>
+ <ID>quran</ID>
+ <ENDPOINT>D:/Dropbox/Web/SemanticQuran/semq.ttl</ENDPOINT>
+ <TYPE>TURTLE</TYPE>
+ <VAR>?x</VAR>
+ <PAGESIZE>-1</PAGESIZE>
+ <RESTRICTION>?x a qvoc:Word</RESTRICTION>
+ <PROPERTY>rdfs:label AS lowercase->nolang
+ </PROPERTY>
+ </SOURCE>
+<TARGET>
+<ID>wiktionary</ID>
+<ENDPOINT>http://wiktionary.dbpedia.org/sparql
+</ENDPOINT>
+<VAR>?y</VAR>
+<PAGESIZE>-1</PAGESIZE>
+<RESTRICTION>?y rdf:type lemon:LexicalEntry
+</RESTRICTION>
+<RESTRICTION>FILTER langMatches( lang(?v0), "en" )
+</RESTRICTION>
+<PROPERTY>rdfs:label AS lowercase->nolang
+</PROPERTY>
+</TARGET>
+<METRIC>trigrams(x.rdfs:label,y.rdfs:label)</METRIC>
