@@ -40,7 +40,7 @@
 </RESTRICTION>
 <PROPERTY>rdfs:label</PROPERTY>
 </TARGET>
-<METRIC>jaccard(concat("سورة ",x.rdfs:label),y.rdfs:label)|0.1</METRIC>
+<METRIC>ExactMatch(x.rdfs:label,y.rdfs:label)</METRIC>
 	<ACCEPTANCE>
 		<THRESHOLD>0.6</THRESHOLD>
 		<FILE>accepted.nt</FILE>
@@ -48,7 +48,7 @@
 	</ACCEPTANCE>
 
 	<REVIEW>
-		<THRESHOLD>0.2</THRESHOLD>
+		<THRESHOLD>0.4</THRESHOLD>
 		<FILE>to_review.nt</FILE>
 		<RELATION>qvoc:near</RELATION>
 	</REVIEW>

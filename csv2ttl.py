@@ -5,7 +5,7 @@ Created on Sun Jan  3 17:46:59 2021
 @author: Abdelmonem
 """
 import pandas as pd
-the_data=pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\chapters.tsv",sep='\t',encoding='utf8')
+the_data=pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\data\\chapters.tsv",sep='\t',encoding='utf8')
 print(the_data.head())
 print(the_data.count())
 for index, row in the_data.iterrows():
@@ -40,12 +40,14 @@ g.namespace_manager.bind("semq", semq)
 #g.namespace_manager.bind("lgdo", lgdo)
 #g.namespace_manager.bind("vcard", vcard)
 
-
+#%% read csv chapters
 # Load the CSV data as a pandas Dataframe.
-csv_data = pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\chapters.tsv",sep='\t',encoding='utf8')
+csv_data = pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\data\\chapters.tsv",sep='\t',encoding='utf8')
+csv_wuri = pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\wikichaptersPy.csv",sep=',',encoding='utf8')
 
 print(csv_data.head())
 print(csv_data.count())
+print(csv_wuri.count())
 
 #%%
 print(csv_data.loc[0]['sw_id'])
@@ -53,17 +55,25 @@ print(csv_data.loc[0]['sw_id'])
 
 # Loop through the CSV data, and then make RDF triples.
 for index, row in csv_data.iterrows():
-    
-     g.add((URIRef(semq[str(row["sw_id"])]), SKOS.prefLabel,Literal(row["chnamear"], datatype=XSD.string) ))
-     g.add((URIRef(semq[str(row["sw_id"])]), RDFS.label,Literal(row["chnamear"], datatype=XSD.string) ))
+     suri=URIRef(semq[str(row["sw_id"])])
+     #g.add((suri, SKOS.prefLabel,Literal("سورة "+row["chnamear"], datatype=XSD.string) ))
+     #g.add((suri, RDFS.label,Literal("سورة "+row["chnamear"], datatype=XSD.string) ))
+     
      g.add((URIRef(semq[str(row["sw_id"])]), RDF.type,URIRef(qvoc+"Chapter") ))
-     g.add((URIRef(semq[str(row["sw_id"])]), URIRef(qvoc.verseCount),Literal(row["cntVerse"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])]), URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])]), URIRef(qvoc.startOfPageNo),Literal(row["PageNo"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])]), URIRef(qvoc.startOfPartNo),Literal(row["PartNo"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])]), URIRef(qvoc.startOfQuarterNo),Literal(row["Rob3"], datatype=XSD.nonNegativeInteger) ))
-     g.add((URIRef(semq[str(row["sw_id"])]), URIRef(qvoc.startOfStationNo),Literal(row["HezbNo"], datatype=XSD.nonNegativeInteger) ))
-    
+     g.add((suri, URIRef(qvoc.verseCount),Literal(row["cntVerse"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.startOfPageNo),Literal(row["PageNo"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.startOfPartNo),Literal(row["PartNo"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.startOfQuarterNo),Literal(row["Rob3"], datatype=XSD.nonNegativeInteger) ))
+     g.add((suri, URIRef(qvoc.startOfStationNo),Literal(row["HezbNo"], datatype=XSD.nonNegativeInteger) ))
+     wuri=""
+     for index, rr in csv_wuri.iterrows():
+         if rr['chname'][5:]==row["chnamear"]:
+             wuri=rr['wikiuri']
+             break;
+     if len(wuri)>0:
+        print(wuri)
+        g.add((suri, OWL.sameAs,wuri ))
 
 # I remove triples that I marked as unknown earlier.
 #g.remove((None, None, URIRef("http://example.org/unknown")))
@@ -127,7 +137,37 @@ owl:sameAs            DBpedia-URI
 owl:sameAs            Wiktionary-URI
 '''
 
-#%%
+#%%===writfile========
 # Clean printing of the graph.
 #print(g.serialize(format="turtle").decode())
 g.serialize(destination='semq.ttl', format='ttl')
+#%% ==== get wikidata uri=====================
+from SPARQLWrapper import SPARQLWrapper, JSON
+
+sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
+sparql.setReturnFormat(JSON)
+sparql.setQuery("""
+    select ?s ?lbl
+     where{   
+  # surah
+  ?s wdt:P31 wd:Q234262.
+   #?s wdt:P361 wd:Q428. partof Quran
+  ?s rdfs:label ?lbl.
+  filter(lang(?lbl)="ar")
+   }    
+    """
+                )
+try:
+    ret = sparql.queryAndConvert()
+
+    for r in ret["results"]["bindings"]:
+        print(r)
+except Exception as e:
+    print(e)
+#%%
+sw=[]
+for r in ret["results"]["bindings"]:
+    row={'wikiuri':r['s']['value'],'chname':r['lbl']['value']}
+    sw.append(row)
+df=pd.DataFrame(sw)
+df.to_csv("wikiChaptersPy.csv")

@@ -1,0 +1,25 @@
+#endpoint
+
+http://localhost:8890/sparql
+
+serdi -i turtle semq.ttl -o ntriples >semq.nt
+
+delete from DB.DBA.LOAD_LIST;
+ commit work; 
+ ld_add('/sharedf/semq.nt','semq');
+ rdf_loader_run ();
+ checkpoint;
+ 
+ 
+ select ?p count(*) as ?cnt 
+ from <semq> 
+ where {?s ?p ?o} group by ?p 
+ having (count(*)>1) 
+ order by desc(?cnt)
+ 
+ 
+ select ?c count(*) as ?cnt 
+ from <semq> 
+ where {?s a ?c} group by ?c
+ having (count(*)>1) 
+ order by desc(?cnt)
