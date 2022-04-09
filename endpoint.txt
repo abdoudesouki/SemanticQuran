@@ -23,3 +23,11 @@ delete from DB.DBA.LOAD_LIST;
  where {?s a ?c} group by ?c
  having (count(*)>1) 
  order by desc(?cnt)
+ 
+ 
+ prefix qvoc: <http://www.nlp2rdf.org/quranvocab#>
+ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  select ?s ?lbl
+ from <semq> 
+ where {?s a qvoc:Verse
+?s rdfs:label ?lbl} limit 100
