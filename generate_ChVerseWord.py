@@ -92,6 +92,21 @@ names startOfPageNo , inPage changed between chapter and verse in Ontology
 
 
 ===================================================
+skos:prefLabel        Litral-multilingual
+rdfs:label            literal-multilingual
+qvoc:chapterIndex     xsd:nonNegativeInteger
+qvoc:verseIndex       xsd:nonNegativeInteger
+qvoc:wordIndex        xsd:nonNegativeInteger
+dcterms:language      Lexvo-URI
+dcterms:license       URI
+dcterms:provenance    Litral-en
+owl:sameAs            DBpedia-URI
+owl:sameAs            Wiktionary-URI
+
+
+
+
+===================================================
 
 nif , annotation char2char entity
 lexical items

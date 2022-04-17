@@ -12,3 +12,10 @@ where{
   ?s rdfs:label ?lbl.
   filter(lang(?lbl)="ar")
    }    
+   
+   select *
+   {  ?s wdt:P31   wd:Q188219.#aya
+   ?s wdt:P361 wd:Q428.
+   ?s rdfs:label ?lbl.
+   filter(lang(?lbl)="ar")
+   }

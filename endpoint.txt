@@ -31,3 +31,17 @@ delete from DB.DBA.LOAD_LIST;
  from <semq> 
  where {?s a qvoc:Verse
 ?s rdfs:label ?lbl} limit 100
+
+#delete graph
+http://localhost:8890/conductor  linked data / graphs
+
+sparql drop graph <semq>
+
+#words with 1 char
+prefix qvoc: <http://www.nlp2rdf.org/quranvocab#>
+ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  select ?lbl,count(*)
+ from <semq> 
+ where {?s a qvoc:Word.
+?s rdfs:label ?lbl.
+filter(strlen(?lbl)=1)} 

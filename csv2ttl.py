@@ -12,7 +12,7 @@ for index, row in the_data.iterrows():
     print(index,row["sw_id"])
     
 
-#%%
+#%%==create graph
 import csv
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDF, FOAF, RDFS, OWL, DCTERMS, SKOS, XSD
@@ -49,17 +49,16 @@ print(csv_data.head())
 print(csv_data.count())
 print(csv_wuri.count())
 
-#%%
-print(csv_data.loc[0]['sw_id'])
+
 #%% Chapters
 
 # Loop through the CSV data, and then make RDF triples.
 for index, row in csv_data.iterrows():
      suri=URIRef(semq[str(row["sw_id"])])
-     #g.add((suri, SKOS.prefLabel,Literal("سورة "+row["chnamear"], datatype=XSD.string) ))
-     #g.add((suri, RDFS.label,Literal("سورة "+row["chnamear"], datatype=XSD.string) ))
+     g.add((suri, SKOS.prefLabel,Literal("سورة "+row["chnamear"], datatype=XSD.string) ))
+     g.add((suri, RDFS.label,Literal("سورة "+row["chnamear"], datatype=XSD.string) ))
      
-     g.add((URIRef(semq[str(row["sw_id"])]), RDF.type,URIRef(qvoc+"Chapter") ))
+     g.add((suri, RDF.type,URIRef(qvoc+"Chapter") ))
      g.add((suri, URIRef(qvoc.verseCount),Literal(row["cntVerse"], datatype=XSD.nonNegativeInteger) ))
      g.add((suri, URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
      g.add((suri, URIRef(qvoc.startOfPageNo),Literal(row["PageNo"], datatype=XSD.nonNegativeInteger) ))
@@ -73,7 +72,7 @@ for index, row in csv_data.iterrows():
              break;
      if len(wuri)>0:
         print(wuri)
-        g.add((suri, OWL.sameAs,wuri ))
+        g.add((suri, OWL.sameAs,Literal(wuri,datatype=XSD.anyURI) ))
 
 # I remove triples that I marked as unknown earlier.
 #g.remove((None, None, URIRef("http://example.org/unknown")))
@@ -92,13 +91,14 @@ print(str(mysr['text'][mysr['S']=='2' ][ mysr['A']==5].tolist()[0]))
 #x=mysr[['text']][  mysr['S']==1 & mysr['A']==5]
 #print(x)
 #%%  ====================== Verses /words==========================
-csv_data = pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\ayat.tsv",sep='\t',encoding='utf8')
+csv_data = pd.read_csv("D:\\Dropbox\\Web\\SemanticQuran\\data\\ayat.tsv",sep='\t',encoding='utf8')
 print(csv_data.head())
 print(csv_data.count())
 for index, row in csv_data.iterrows():    
      suri=URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])+"-ar"])
-     g.add((suri, SKOS.prefLabel,Literal(row["text"], datatype=XSD.string) ))
-     g.add((suri, RDFS.label,Literal(row["text"], datatype=XSD.string) ))
+     g.add((suri, SKOS.prefLabel,Literal(row["text"]) ))
+     g.add((suri, RDFS.label,Literal(row["text"]) ))
+     g.add((suri, RDF.type,URIRef(qvoc+"Verse") ))
      g.add((suri, DCTERMS.isPartOf,URIRef(semq[str(row["sw_id"])])) )
      g.add((suri, URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
      g.add((suri, URIRef(qvoc.verseIndex),Literal(row["ayaNo"], datatype=XSD.nonNegativeInteger) ))
@@ -117,11 +117,17 @@ for index, row in csv_data.iterrows():
 #dcterms:license        URI
 #dcterms:provenance     Litral-en
      aa=row['text'].split()
+     aa1=[i for i,x in enumerate(aa) if len(x)<=1 and x !="ق" and x!="ص" and x!="ن"]
+     ix=0
+     for i in aa1 :
+         del aa[i-ix]
+         ix=ix+1
      ix=1
      for w in aa:
         wuri=URIRef(semq[str(row["sw_id"])+"-"+str(row["ayaNo"])+"-"+str(ix)]+"-ar")
-        g.add((wuri, SKOS.prefLabel,Literal(w, datatype=XSD.string) ))
-        g.add((wuri, RDFS.label,Literal(w, datatype=XSD.string) ))
+        g.add((wuri, SKOS.prefLabel,Literal(w) ))
+        g.add((wuri, RDF.type,URIRef(qvoc+"Word") ))
+        g.add((wuri, RDFS.label,Literal(w) ))
         g.add((wuri, DCTERMS.isPartOf,URIRef(semq[str(row["sw_id"])])) )
         g.add((wuri, DCTERMS.isPartOf,suri) )
         g.add((wuri, URIRef(qvoc.chapterIndex),Literal(row["sw_id"], datatype=XSD.nonNegativeInteger) ))
@@ -140,7 +146,9 @@ owl:sameAs            Wiktionary-URI
 #%%===writfile========
 # Clean printing of the graph.
 #print(g.serialize(format="turtle").decode())
-g.serialize(destination='semq.ttl', format='ttl')
+g.serialize(destination='semq.ttl', format='ttl',encoding='utf8')
+print('serializing ntriples...')
+g.serialize(destination='C:\\dockerImgs\\shared\\semq.nt', format='nt',encoding='utf8')
 #%% ==== get wikidata uri=====================
 from SPARQLWrapper import SPARQLWrapper, JSON
 
